@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{margin:0; padding:0;}
+
+body{
+	background-color: floralwhite;
+}
+
+#img-topo, header{
+	width: 100%;
+	background-color: lightyellow; 
+}
+
+img{
+	width: 100%;
+	height: 380px;
+}
+
+nav{
+	background-color: #E8BB54; 
+	text-align: center;
+	padding: 15px;
+}
+
+a{
+	font: 1rem 'Poppins', serif;
+	text-decoration: none;
+}
+
+.a-menu{
+	/*color: #000;*/
+	margin-right: 40px;
+	font-weight: bold;
+	/*background-color: red;*/
+	/*font-size: 1.4em;*/
+}
+
+.a-menu:link, .a-menu:visited{
+	color:#363856;
+}
+
+.a-menu:hover, .a-menu:active{
+	color:#FFF;
+}
+
+
+main, #pag-beneficios, #pag-modalidades, #pag-historia{
+	padding: 80px;
+}
+
+main{
+	width: 100%;
+ 	background-color: #FFF;
+ 	padding: 20px;
+ 	box-sizing: border-box;
+}
+
+h1{
+	font-family: 'Abril Fatface', serif;
+	font-size: 3rem;
+	color: #CE913B; 
+	text-align: center;
+	margin-bottom: 30px;
+	/*margin: 5px 10px 20px 30px;*/
+}
+
+p{
+	font-family: 'Poppins', serif;
+	font-size: 1rem;
+	color: #000000;
+	text-align: justify;
+	/*text-indent: 20px;*/
+	line-height: 30px;
+}
+
+#txt-preto{
+	color:#000;
+}
+
+section{
+	padding: 20px;
+}
+
+h2{
+	font-family: 'Abril Fatface', serif;
+	font-size: 2rem;
+	color: #CE913B; 
+	margin-bottom: 20px;
+}
+
+/*único*/
+#pag-beneficios{
+	background-color: #363856;	
+}
+
+#pag-beneficios h2{
+	color: #FFF; 
+}
+
+#pag-beneficios p{
+	color: #FFF; 
+	margin-top: 30px;
+}
+
+ul{
+	/*list-style-position: inside;*/
+	list-style-type: circle;
+	padding:20px 50px;
+}
+
+li{
+	font-family: 'Poppins', serif;
+	font-size: 1rem;
+	color:#FFF;
+	margin-bottom: 10px;
+}
+
+#pag-modalidades{
+	background-color: #FFF4E5;
+}
+
+#container{
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.card{
+	background-color: #FFF;
+	margin: 10px;
+	width:25%;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px #CCC;
+	transition: 0.5s;
+}
+
+.card:hover{
+	box-shadow: 0px 8px 16px #CCC;
+}
+
+.card-content{
+	padding: 10px;
+}
+
+.card-content p{
+	font-family: 'Poppins', serif;
+	font-size: 1rem;
+	line-height: 20px;
+}
+
+h3{
+	font-family: 'Abril Fatface', serif;
+	font-size: 1.3rem;
+	color: #CE913B;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#pag-historia{
+
+}
+
+#pag-historia p {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#container-historia{
+	display: flex;
+}
+
+.coluna-historia{
+	padding: 20px;
+}
+
+.container-imagens{
+	margin-top: 40px;
+	display: flex;
+	/*centralizar os elementos*/
+	justify-content: center;
+	/*centralizar os itens que tem dentro dos container (imagens e texto)*/
+	align-items: center;
+}
+
+.container-imagens p{
+	color: 000;
+}
+
+.img-icones{
+	width: 25px;
+	height: 27px;
+	padding: 10px;
+}
+
+video{
+	width: 400px;
+}
+
+.seta{
+	text-align: right;
+}
+
+.imagem-seta{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+ 	bottom: 55px;
+ 	right: 30px;
+}
+
+footer{
+	background-color: #000;
+	padding: 10px;
+}
+
+footer p{
+	text-align: center;
+	color: #FFF;
+}
+
+footer a{
+	color: #FFF;
+}
+
+footer a:hover{
+	color: #E8BB54;
+}
+
+/*pagina: agendamentos*/
+
+#pag-agendamentos p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 400px;
+	margin: 0 auto;
+}
+
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	/*Propriedades da borda: ESPESSURA, ESTILO e COR*/
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+
+label, fieldset, input, select{
+	font-family: 'Poppins', serif;
+}
+
+fieldset{
+	border: 1px solid #CCC;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#data-hora-num{
+	display: flex;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-right: 50px;
+}
+
+textarea{
+	height: 80px;
+}
+
+#botoes-form{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 20px;
+	background-color: #397D22;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	background-color: #C05946;
+}

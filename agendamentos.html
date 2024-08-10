@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Agendamentos</title>
+		<meta name="author" content="Sabrina Souza"/>
+		<meta name="keywords" content="Bicileta, Saúde, Bem-estar, Ciclismo, Atividade Física, Esporte"/>
+		<meta name="description" content="Ciclismo e seus benefícios"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+	<body>
+		<header>
+			<img src="img/banner.png" alt="Banner contendo uma bicicleta em cima de um piso marrom, com fundo azul escuro; o banner contém uma bicileta composta pelas cores marrom, amarela e laranja; há uma frase do Guilherme Paixão no topo do banner que diz: Pedalar ao ar lvre não te faz apenas ver paisagens, faz você se tornar parte delas." />
+		</header>
+
+		<nav>
+			<a class="a-menu" href="index.html">HOME</a>
+			<a class="a-menu" href="index.html#pag-beneficios" >BENEFÍCIOS</a>
+			<a class="a-menu" href="index.html#pag-modalidades">MODALIDADES</a>
+			<a class="a-menu" href="index.html#pag-historia">HISTÓRIA</a>
+			<a class="a-menu" href="#">AGENDAMENTOS</a>
+		</nav>
+
+		<section id="pag-agendamentos">
+			<h1>Agendamentos</h1>
+
+			<p>Faça sua inscrição gratuita para o nosso curso de ciclismo!</p>
+			
+			<form name="formulario" method="" action="">
+				
+			<label for="nome">Nome:</label>
+			<input id="nome" type="text" name="nome" placeholder="Digite seu nome completo"required autofocus value=""/>
+
+			<label for="email">E-mail:</label>
+			<input id="email" type="email" name="email" placeholder="nomeusuario@email.com"/>
+
+			<label for="senha">Senha:</label>
+			<input id="senha" type="password" name="senha" placeholder="Somente número">
+			<label for="celular">Celular:</label>
+			<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+			<div id="data-hora-num">
+				<div>	
+					<label for="data">Data:</label>
+					<input id="data" type="date" name="data"/>				
+				</div>
+				<div>
+					<label for="hora">Hora:</label>
+					<input id="hora" type="time" name="hora"/>
+				</div>
+				<div>		
+					<label for="aulas">Aulas:</label>
+					<input id="aulas" type="number" name="aulas" min="1" max="10" step="1" />
+				</div>
+			</div>
+
+			<label for="nivel">Nível:</label>
+			<select id="nivel" name="nivel">
+				<option value="">Selecione</option>
+				<option value="iniciante">Iniciante</option>
+				<option value="basico">Básico</option>
+				<option value="intermediario">Intermediário</option>
+				<option value="avancado">Avançado</option>
+			</select>
+
+			<fieldset>
+				<legend>Gênero:</legend>
+				<input id="masculino" type="radio" name="genero" value="masculino"> <label for="masculino">Masculino</label><br/>
+				<input id="feminino" type="radio" name="genero" value="feminino"> <label for="feminino">Feminino</label>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Atividades:</legend>
+				<input id="ciclimopista" type="checkbox" name="atividade" value="ciclimopista" /><label for="ciclimopista">Ciclismo de Pista</label><br/>
+				<input id="mountainbike" type="checkbox" name="atividade" value="mountainbike" /><label for="mountainbike">Mountain Bike</label><br/>
+				<input id="ciclismoestrada" type="checkbox" name="atividade" value="ciclismoestrada" /><label for="ciclismoestrada">Ciclismo de Estrada</label><br/>
+				<input id="downhill" type="checkbox" name="atividade" value="downhill" /><label for="downhill">Downhill</label><br/>
+			</fieldset>
+
+
+			<label for="mensagem">Mensagem:</label>
+			 <textarea id="mensagem" cols="52px" rows="4"></textarea>
+
+			<div id="botoes-form">
+				<input type="submit" name="botao-agendar" value="AGENDAR"/>
+				<input type="reset" name="botao-cancelar" value="CANCELAR"/>
+			</div>
+
+			</form>
+		</section>
+
+		<footer>
+			<p align="center">Desenvolvido por <a href="http://instagram.com.br/sabrina_souzass" target="_blank">Sabrina Souza</a> - 2024</p>
+		</footer>
+	</body>
+</html>
